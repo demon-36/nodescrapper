@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome to Quotes Feed</title>
+        <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    </head>
+    <body id="main" class="main">
+        <div>
+            <form method="get" action="/get_quotes/">
+                <input id="btn_q" class="btn_q" type="submit" value="Get Quotes">
+              </form>
+              <hr style="width:50%">
+              <form method="get" action="/get_speakers/">
+                <input id="btn_s" class="btn_s" type="submit" value="Speakers">
+              </form>
+              <hr style="width:50%">
+              <form id="form" class="form" method="get" action="/get_speaker_data/" >
+                Get Quotes : <input type = "text" placeholder="type author name for quotes" name = "name"> 
+                <input type = "submit" value = "Submit">
+              </form>
+              <hr style="width:50%">
+              <form id="form" class="form" method="get" action="/get_tag_data/" >
+                Get top tags : <input type = "text" placeholder="type author name for tags" name = "name"> 
+                <input type = "submit" value = "Submit">
+              </form>
+              <br>
+              <hr style="width:50%">
+        </div>
+    </body>
+</html>

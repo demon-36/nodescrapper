@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Authors feed</title>
+        <link rel="stylesheet" type="text/css" href="/styles/style.css" />
+    </head>
+    <body id="main" class="main">
+        <h2 style="position: relative; left: 40%;">Some legendary People here!!!</h2>
+        <hr style="width:50%; position: relative; left: 0%;">
+        <br>
+        <div id="content" class="content">
+            <% arrobj.forEach(function(a){ %>
+                <strong>Name : <%= a.Author %></strong>
+                <h5>About : <%= a.About %></h5>
+                <h5>Description : <%= a.Description %></h5>
+                <hr>
+                <br>
+            <%})%>
+        </div>
+    </body>
+</html>

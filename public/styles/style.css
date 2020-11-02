@@ -1,0 +1,16 @@
+.main{
+    background-color: lightgray;
+}
+
+.btn_q{
+    position: relative;
+    left: 50%;
+}
+.btn_s{
+    position: relative;
+    left: 50.4%;
+}
+.form{
+    position: relative;
+    left: 40%;
+}

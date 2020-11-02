@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Authors feed</title>
+        <link rel="stylesheet" type="text/css" href="/styles/style.css" />
+    </head>
+    <body id="main" class="main">
+        <h2 style="position: relative; left: 40%;">Famous Quotes of <%= name %> here!!!</h2>
+        <hr style="width:50%; position: relative; left: 0%;">
+        <br>
+        <div id="content" class="content">
+            <% if(arrobj.length==0){%>
+                <h4>We guess <strong><%= name %></strong> hasn't said anything, try again entering the name !!!</h4>
+            <% } else { %>
+                <% arrobj.forEach(function(q){ %>
+                    <strong>Quote : <%= q.Quote %></strong>
+                    <hr>
+                    <br>
+                <%})%>
+            <% } %>
+        </div>
+    </body>
+</html>
